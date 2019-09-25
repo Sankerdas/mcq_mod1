@@ -1,0 +1,40 @@
+
+<form [formGroup]="this.qnsService.form" (ngSubmit)='onSubmit()'>
+
+  <div class="input-field col s12">
+    <input type='text' formControlName="qn" id='qn' class="validate" />
+    <label for="qn">Question</label>
+  </div>
+
+  <div class="input-field col s12">
+    <input type='text'  formControlName="opnA" id='opnA' class="validate" />
+    <label for="opnA">Option A</label>
+  </div>
+
+  <div class="input-field col s12">
+    <input type='text'  formControlName="opnB" id='opnB' class="validate" />
+    <label for="opnB">Option B</label>
+  </div>
+
+  <div class="input-field col s12">
+    <input type='text'  formControlName="opnC" id='opnC' class="validate" />
+    <label for="opnC">Option C</label>
+  </div>
+
+  <div class="input-field col s12">
+    <input type='text'  formControlName="opnD" id='opnD' class="validate" />
+    <label for="opnD">Question D</label>
+  </div>
+  
+      <p class="radioPara">
+        <span class="ansOpnSpn">Choose Answer</span> <br>
+        <label><input name="ans" type="radio" formControlName="ans" value="A" /><span>Option A</span></label>
+        <label><input name="ans" type="radio" formControlName="ans" value="B" /><span>Option B</span></label>
+        <label><input name="ans" type="radio" formControlName="ans" value="C" /><span>Option C</span></label>
+        <label><input name="ans" type="radio" formControlName="ans" value="D" /><span>Option D</span></label>
+      </p>
+  <button class='waves-effect waves-light btn col s12' >
+    Add Question
+  </button>
+
+</form>

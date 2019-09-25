@@ -1,0 +1,29 @@
+.qzCls {
+  padding: 20px;
+}
+
+.card-action a{
+  cursor: pointer;
+}
+
+.card-action a span {
+  border: solid 2px;
+  padding: 0px 5px;
+  color: black;
+  font-size: 12px;
+}
+
+.disable {
+  pointer-events: none;
+}
+
+.tmeDiv {
+  position: fixed;
+  top: 5px;
+  right: 20px;
+  background: #1F2831;
+  color: #fff;
+  opacity: .8;
+  border-radius: 5px;
+  padding: 5px;
+}
